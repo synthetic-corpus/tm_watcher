@@ -6,6 +6,31 @@ import os
 import datetime
 import subprocess
 from subprocess import PIPE
+
+#String to Time Stamp
+#Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
+#Converts it into a datetime object.
+def terminalToDatetime(string):
+    # two lines below convert:
+    # string = "/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532"
+    # rawdate = "2017-03-10-124532"
+    index = string.rfind("/")
+    rawdate = string[index + 1:]
+    # Lines below conver "2017-03-10-124532"
+    # Into ['2017','03','10','12',45] Year, Month, day etc...
+    timeList = rawdate.split("-")
+    hours = timeList[3][0:2]
+    minutes = timeList[3][2:4]
+    timeList[3] = hours
+    timeList.append(minutes)
+    #Loop Below converts list of strings to list of integers
+    timeInt =[]
+    for string in timeList:
+        timeInt.append(int(string))
+    #Takes input from list and converts to a date.
+    convertedDate = datetime.datetime(timeInt[0],timeInt[1],timeInt[2],timeInt[3],timeInt[4])
+    return convertedDate
+
 #Write a function that (Check) checks the last time Machine back.
 # Takes no Paramters. Returns the time of the last back up as a Date.
 def readBackUpOutput(string):

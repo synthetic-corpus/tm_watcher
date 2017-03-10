@@ -52,9 +52,13 @@ def getBackupString():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["tmutil","latestbackup"], stdout=PIPE, stderr=PIPE)
     #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
-    string_out = rawout.communicate()[1]
-    print string_out
-    print rawout.communicate()
+    result = rawout.communicate()
+    if len(result[0]) > 0:
+        string_out = result[0]
+    elif len(result[1]) > 0:
+        string_out = result[1]
+    else:
+        string_out = "error in the read string"
     return string_out
 
 def networkOutput():
@@ -74,4 +78,4 @@ def networkOutput():
     else:
         print "something is wrong with the code. What went wrong?"
 
-print getBackupString()
+networkOutput()

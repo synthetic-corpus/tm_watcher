@@ -19,13 +19,15 @@ def getSerial():
     string_out = result[start_cut + 24:start_cut +24 +13]
     return string_out
 
+#Gets the Computer names
 def getCompName():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["scutil","--get","ComputerName"], stdout=PIPE, stderr=PIPE)
     #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
     result = rawout.communicate()[0]
     # Easiest one so far
-    return result
+    string_out = result[:-1] # Done to remove a non-character line break.
+    return string_out
 
 #String to Time Stamp
 #Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
@@ -51,8 +53,7 @@ def terminalToDatetime(string):
     convertedDate = datetime.datetime(timeInt[0],timeInt[1],timeInt[2],timeInt[3],timeInt[4])
     return convertedDate
 
-#Write a function that (Check) checks the last time Machine back.
-# Takes no Paramters. Returns the time of the last back up as a Date.
+#Reads the string output from getBackupString()
 def readBackUpOutput(string):
     #Checks for the errro message using string.find
     if string.find("Unable to locate machin") != -1:
@@ -68,6 +69,8 @@ def readBackUpOutput(string):
         else:
             return "overdue"
 
+#Runs a 'tmutil latestbackup' as a termainl command.
+#Returns result as a string.
 def getBackupString():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["tmutil","latestbackup"], stdout=PIPE, stderr=PIPE)
@@ -81,9 +84,11 @@ def getBackupString():
         string_out = "error in the read string"
     return string_out
 
+# Triggers all other functions
+# Returns output as print for now.
+# Will eventually send data over network.
 def networkOutput():
     terminal_output = getBackupString()
-    #print terminal_output
     machine_serial = getSerial() #Use mac OS module to get machine serial
     machine_name = getCompName() #Get Mac OS module to get machine name
     if readBackUpOutput(terminal_output) == "disconnected":

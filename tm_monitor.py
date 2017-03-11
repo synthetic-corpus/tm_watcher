@@ -7,6 +7,26 @@ import datetime
 import subprocess
 from subprocess import PIPE
 
+#Used to get the computer's Serial number
+def getSerial():
+    #Returns an immutable tuple. Second thing in tuple is what I need as a string.
+    rawout = subprocess.Popen(["system_profiler","SPHardwareDataType"], stdout=PIPE, stderr=PIPE)
+    #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
+    result = rawout.communicate()[0]
+    start_cut = result.find("Serial Number")
+    # 24 is the Lengthe betwen "Serial Number" and where the Serial number starts
+    # 13 accounts for the lenght of serial number itself.
+    string_out = result[start_cut + 24:start_cut +24 +13]
+    return string_out
+
+def getCompName():
+    #Returns an immutable tuple. Second thing in tuple is what I need as a string.
+    rawout = subprocess.Popen(["scutil","--get","ComputerName"], stdout=PIPE, stderr=PIPE)
+    #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
+    result = rawout.communicate()[0]
+    # Easiest one so far
+    return result
+
 #String to Time Stamp
 #Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
 #Converts it into a datetime object.
@@ -64,8 +84,8 @@ def getBackupString():
 def networkOutput():
     terminal_output = getBackupString()
     #print terminal_output
-    machine_ID = 'machine ID' #Use mac OS module to get machine serial
-    machine_name = 'machine name' #Get Mac OS module to get machine name
+    machine_serial = getSerial() #Use mac OS module to get machine serial
+    machine_name = getCompName() #Get Mac OS module to get machine name
     if readBackUpOutput(terminal_output) == "disconnected":
         #Send network 'red signal with machine info.
         print "Back up for ",machine_name," is offline."

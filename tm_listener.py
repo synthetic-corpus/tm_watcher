@@ -7,7 +7,7 @@ import socket
 import SocketServer
 
 # Make a sock?
-sock = socket.socket(socket.AF_INET, socket.SOC_STREAM)
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # This line restarts the server when it terminates faster than usual.
 # Honestly unsure why the books tells me I need this line.
@@ -20,17 +20,19 @@ sock.bind(('', known_port))
 sock.listen(5)
 
 # Loop, wait for connections.
-
+print "Listening for connections..."
 try:
     while 1:
         newSocket, address = sock.accept()
         print "Have connection from: ", address
         # Seems like these loops could be 'while true'?
         while 1:
-            recievedData = newSocket.recv(1024)
-            if not recievedData:
+            receivedData = newSocket.recv(1024)
+            if not receivedData:
                 break
-            newSocket.send("recieved this: ",receivedData)
+            echo_back = "We have this: " + receivedData
+            print echo_back
+            newSocket.send(echo_back)
         newSocket.close()
         print "Closed Connection From ",address
 finally:

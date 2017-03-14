@@ -33,13 +33,13 @@ def getCompName():
 #Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
 #Converts it into a datetime object.
 def terminalToDatetime(string):
-    # two lines below convert:
+    # two lines below converts:
     # string = "/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532"
     # rawdate = "2017-03-10-124532"
     index = string.rfind("/")
     rawdate = string[index + 1:]
-    # Lines below conver "2017-03-10-124532"
-    # Into ['2017','03','10','12',45] Year, Month, day etc...
+    # Lines below converts "2017-03-10-124532"
+    # Into ['2017','03','10','12','45'] Year, Month, day etc...
     timeList = rawdate.split("-")
     hours = timeList[3][0:2]
     minutes = timeList[3][2:4]
@@ -89,18 +89,27 @@ def getBackupString():
 # Will eventually send data over network.
 def networkOutput():
     terminal_output = getBackupString()
+    machine_status = readBackUpOutput(terminal_output)
     machine_serial = getSerial() #Use mac OS module to get machine serial
     machine_name = getCompName() #Get Mac OS module to get machine name
+    json_template = '{"Time_machine_data":{"status":"#status#","serial":"#serial#","computerName":"#computername#"}}'
+    # Replace the Template with the output to be interpreted by a server.
+    json_out = json_template.replace('#status#',machine_status).replace('#serial#',machine_serial).replace('#computername#',machine_name)
+    print json_out
+'''
     if readBackUpOutput(terminal_output) == "disconnected":
         #Send network 'red signal with machine info.
         print "Back up for ",machine_name," is offline."
+        print json_out
     elif readBackUpOutput(terminal_output) == "overdue":
         #Send network 'yellow signal' with machine info.
         print "Back up for ",machine_name," is overdue."
+        print json_out
     elif readBackUpOutput(terminal_output) == "working":
         #Send network Green signal with machine info
         print "Back up for ",machine_name," is working."
+        print json_out
     else:
         print "something is wrong with the code. What went wrong?"
-
+'''
 networkOutput()

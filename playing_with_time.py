@@ -2,17 +2,15 @@ import os
 import datetime
 import time
 
-aTime = datetime.datetime(2017,03,10,9,45)
 currentTime = datetime.datetime.now()
-deltaTime = currentTime - aTime
-print "arbitaray time ",aTime
-print "current is ,",currentTime
-print "elasped is ",deltaTime
+print "Time Variable is: ",currentTime
+print "Datetime method returns:  ",datetime.datetime.now()
+print "Now sleeping..."
+counter = 0
+while counter != 7:
+    print "zzz.."
+    time.sleep(5)
+    counter = counter +1
 
-twohours = datetime.timedelta(hours = 2)
-print "Length of time ",twohours
-
-if deltaTime > twohours:
-    print "More than Two hours"
-else:
-    print "Not more than two hours"
+print "Time Variable is: ",currentTime
+print "Datetime method returns:  ",datetime.datetime.now()

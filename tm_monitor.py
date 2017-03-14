@@ -92,9 +92,10 @@ def networkOutput():
     machine_status = readBackUpOutput(terminal_output)
     machine_serial = getSerial() #Use mac OS module to get machine serial
     machine_name = getCompName() #Get Mac OS module to get machine name
-    json_template = '{"Time_machine_data":{"status":"#status#","serial":"#serial#","computerName":"#computername#"}}'
+    machine_timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') #Returns timestamp as string.
+    json_template = '{"Time_machine_data":{"status":"#status#","serial":"#serial#","computerName":"#computername#","timestamp":"#timestamp#"}}'
     # Replace the Template with the output to be interpreted by a server.
-    json_out = json_template.replace('#status#',machine_status).replace('#serial#',machine_serial).replace('#computername#',machine_name)
+    json_out = json_template.replace('#status#',machine_status).replace('#serial#',machine_serial).replace('#computername#',machine_name).replace('#timestamp#',machine_timestamp)
     print json_out
 '''
     if readBackUpOutput(terminal_output) == "disconnected":

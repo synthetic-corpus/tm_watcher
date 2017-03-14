@@ -6,6 +6,7 @@ import os
 import datetime
 import subprocess
 from subprocess import PIPE
+import socket
 
 #Used to get the computer's Serial number
 def getSerial():
@@ -84,6 +85,14 @@ def getBackupString():
         string_out = "error in the read string"
     return string_out
 
+# Function sends data overnetwork.
+def sendThis(json_out):
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect(('127.0.0.1',80))
+    sock.send(json_out)
+    response_data = sock.recv(1024)
+    sock.close()
+
 # Triggers all other functions
 # Returns output as print for now.
 # Will eventually send data over network.
@@ -97,6 +106,8 @@ def networkOutput():
     # Replace the Template with the output to be interpreted by a server.
     json_out = json_template.replace('#status#',machine_status).replace('#serial#',machine_serial).replace('#computername#',machine_name).replace('#timestamp#',machine_timestamp)
     print json_out
+    sendThis(json_out)
+
 '''
     if readBackUpOutput(terminal_output) == "disconnected":
         #Send network 'red signal with machine info.

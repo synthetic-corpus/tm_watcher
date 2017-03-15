@@ -17,7 +17,7 @@ def getSerial():
     start_cut = result.find("Serial Number")
     # 24 is the Lengthe betwen "Serial Number" and where the Serial number starts
     # 13 accounts for the lenght of serial number itself.
-    string_out = result[start_cut + 24:start_cut +24 +13]
+    string_out = result[start_cut + 24:start_cut +24 +12]
     return string_out
 
 #Gets the Computer names
@@ -102,26 +102,8 @@ def networkOutput():
     machine_serial = getSerial() #Use mac OS module to get machine serial
     machine_name = getCompName() #Get Mac OS module to get machine name
     machine_timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') #Returns timestamp as string.
-    json_template = '{"Time_machine_data":{"status":"#status#","serial":"#serial#","computerName":"#computername#","timestamp":"#timestamp#"}}'
-    # Replace the Template with the output to be interpreted by a server.
-    json_out = json_template.replace('#status#',machine_status).replace('#serial#',machine_serial).replace('#computername#',machine_name).replace('#timestamp#',machine_timestamp)
-    print json_out
-    sendThis(json_out)
+    python_out = {machine_serial:{"status":machine_status,"serial":machine_serial,"name":machine_name,"timestring":machine_timestamp}}
+    # print python_out
+    sendThis(python_out)
 
-'''
-    if readBackUpOutput(terminal_output) == "disconnected":
-        #Send network 'red signal with machine info.
-        print "Back up for ",machine_name," is offline."
-        print json_out
-    elif readBackUpOutput(terminal_output) == "overdue":
-        #Send network 'yellow signal' with machine info.
-        print "Back up for ",machine_name," is overdue."
-        print json_out
-    elif readBackUpOutput(terminal_output) == "working":
-        #Send network Green signal with machine info
-        print "Back up for ",machine_name," is working."
-        print json_out
-    else:
-        print "something is wrong with the code. What went wrong?"
-'''
 networkOutput()

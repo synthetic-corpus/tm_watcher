@@ -11,7 +11,7 @@ It will append accordingly.
 function net_input(json_in){
   console.log(json_in);
   var inputted_serial = json_in.serial;
-  if (datalist.hasOwnProperty(inputted_serial)) {
+  if (dataList.hasOwnProperty(inputted_serial)) {
     // Add all the inputed data to the datalist
   } else {
     // updated what the list already has.

@@ -7,6 +7,7 @@ import datetime
 import subprocess
 from subprocess import PIPE
 import socket
+import pickle
 
 #Used to get the computer's Serial number
 def getSerial():
@@ -102,7 +103,8 @@ def networkOutput():
     machine_serial = getSerial() #Use mac OS module to get machine serial
     machine_name = getCompName() #Get Mac OS module to get machine name
     machine_timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') #Returns timestamp as string.
-    python_out = {machine_serial:{"status":machine_status,"serial":machine_serial,"name":machine_name,"timestring":machine_timestamp}}
+    python_dictionary = {machine_serial:{"status":machine_status,"serial":machine_serial,"name":machine_name,"timestring":machine_timestamp}}
+    python_out = pickle.dumps(python_dictionary)
     # print python_out
     sendThis(python_out)
 

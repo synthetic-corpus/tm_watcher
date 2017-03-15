@@ -105,7 +105,6 @@ def networkOutput():
     machine_timestamp = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') #Returns timestamp as string.
     python_dictionary = {machine_serial:{"status":machine_status,"serial":machine_serial,"name":machine_name,"timestring":machine_timestamp}}
     python_out = pickle.dumps(python_dictionary)
-    # print python_out
     sendThis(python_out)
 
 networkOutput()

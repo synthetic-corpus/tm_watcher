@@ -6,11 +6,47 @@ information correctly
 import socket
 import SocketServer
 import pickle
+import os.path
 
 # This Dictionary is contiously updated. Will eventually be initalized via file.
 
 TMdatabase = {}
 
+# Returns an actual log entry to append to log files.
+# @param the message from the network.
+def logentry(client_dictionary):
+    template = " - Computer: #name# - Serial: #serial# - status: #status# \n"
+    formatted_data = template.replace("#name#",client_dictionary["name"]).replace("#serial#",client_dictionary["serial"]).replace("#status#",client_dictionary["status"])
+    output = client_dictionary["timestring"] + formatted_data
+    return output
+
+# Writes log entries to .txt
+# @Param is dictionary from the client.
+def logupdate(client_dictionary):
+    key = clientmessage.keys()[0]
+    # Gets a date string in the form of YYYY-MM-DD
+    # Used to name the .txt files in the log
+    today = client_dictionary["timestring"][0:10]
+    logfilename = "logs/" + today + ".txt"
+    logtext = logentry(client_dictionary)
+    log=open(logfilename,"a+")
+    log.write(logtext)
+    log.close()
+    print "*** wrote to log \n ***"
+
+    '''
+    if os.path.exists(/logs/logfilename):
+        #.e.g if this file is here
+        # Update the file
+    else:
+        # write the file
+        # update the file
+    '''
+
+# Updates TMdatabase
+# @Param is dictionary from the client.
+# clientmessage is a dictionary formatted as
+# {serial number:{rest of the update data}}
 def updateDatabase(clientmessage):
     serial = clientmessage.keys()[0]
     client_dictionary = clientmessage[serial]
@@ -19,6 +55,7 @@ def updateDatabase(clientmessage):
         TMdatabase[serial] = client_dictionary
     else:
         TMdatabase.update(clientmessage)
+    logupdate(client_dictionary)
 # Print Statments for debugging.
     print "Databse looks like: "
     print TMdatabase
@@ -53,7 +90,8 @@ try:
                 break
             clientmessage = pickle.loads(receivedData)
             echo_back = "Have Signal. Updating with "
-            print clientmessage
+            print echo_back,clientmessage
+            print "****"
             updateDatabase(clientmessage)
             newSocket.send(echo_back)
         newSocket.close()

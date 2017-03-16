@@ -28,6 +28,19 @@ def writeDatabase(TMdatabase):
     getfile.write(dump)
     getfile.close()
 
+# Updates the Json object, to be interpreted by Javascript.
+# Javascipt data strucure will be:
+# [ {dict of name, serial, status, and time stamp}, {dict of name, serial, status, and time stamp} ]
+# @Param TMdatabase python object
+def writeJson(TMdatabase):
+    json_object =[]
+    for entry in TMdatabase:
+        json_object.append(TMdatabase[entry])
+    dump = json.dumps(json_object)
+    json_file = open("website/js/table/jsonTable.txt","w+")
+    json_file.write(dump)
+    json_file.close()
+
 # Returns an actual log entry to append to log files.
 # Reports data receieved only.
 # @param the message from the network.
@@ -65,7 +78,7 @@ def logupdate(client_dictionary):
     log=open(logfilename_complex,"a+")
     log.write(logtext_complex)
     log.close()
-    print "*** wrote to log \n ***"
+    print "*** wrote to log \n***"
 
 # Updates TMdatabase
 # @Param is dictionary from the client.
@@ -81,6 +94,8 @@ def updateDatabase(clientmessage):
         TMdatabase.update(clientmessage)
     logupdate(client_dictionary)
     writeDatabase(TMdatabase)
+    # Updates Json database object
+    writeJson(TMdatabase)
 # Print Statments for debugging.
 
 '''

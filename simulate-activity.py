@@ -11,10 +11,11 @@ import subprocess
 from subprocess import PIPE
 import socket
 import pickle
+import time
 
 # An Array of simulated output from this program.
 
-simulation-array = [
+simulationArray = [
 {'C02JP0B4DKQ2':{'status':'working','serial':'C02JP0B4DKQ2','name':"Joel's macbook",'timestring':'2017-03-01 10:00:00'}},
 {'BATMAN--DKQ2':{'status':'disconnected','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-01 10:00:03'}},
 {'JOKER---DKQ2':{'status':'disconnected','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-01 10:00:06'}},
@@ -42,4 +43,13 @@ def networkOutput(simulationData):
     python_out = pickle.dumps(python_dictionary)
     sendThis(python_out)
 
-networkOutput()
+def simulate():
+    sentCount = 0
+    for message in simulationArray:
+        networkOutput(message)
+        time.sleep(3)
+        sentCount = sentCount + 1
+        print "--> sent a message...",sentCount
+    print "--> All Messages sent"
+
+simulate()

@@ -1,6 +1,6 @@
 '''
-Purpose of this program is to help self test if tm_watcher transmits
-information correctly
+This program will listen to the input from  clients,
+log entries, store data in files, and formatt for use by jQuery.
 '''
 
 import socket

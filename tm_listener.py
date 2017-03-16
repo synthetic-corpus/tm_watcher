@@ -29,8 +29,19 @@ def writeDatabase(TMdatabase):
     getfile.close()
 
 # Returns an actual log entry to append to log files.
+# Reports data receieved only.
 # @param the message from the network.
-def logentry(client_dictionary):
+def logentrysimple(client_dictionary):
+    dump = json.dumps(TMdatabase)
+    template = " - Computer: #name# - Serial: #serial# - status: #status# \n"
+    formatted_data = template.replace("#name#",client_dictionary["name"]).replace("#serial#",client_dictionary["serial"]).replace("#status#",client_dictionary["status"])
+    output = "-->" + client_dictionary["timestring"] + formatted_data
+    return output
+
+# Returns an actual log entry to append to log files.
+# Reports data receieved and resulting changes to tm-database.txt
+# @param the message from the network.
+def logentrycomplex(client_dictionary):
     dump = json.dumps(TMdatabase)
     template = " - Computer: #name# - Serial: #serial# - status: #status# \n"
     formatted_data = template.replace("#name#",client_dictionary["name"]).replace("#serial#",client_dictionary["serial"]).replace("#status#",client_dictionary["status"])
@@ -44,10 +55,15 @@ def logupdate(client_dictionary):
     # Gets a date string in the form of YYYY-MM-DD
     # Used to name the .txt files in the log
     today = client_dictionary["timestring"][0:10]
-    logfilename = "logs/" + today + ".txt"
-    logtext = logentry(client_dictionary)
-    log=open(logfilename,"a+")
-    log.write(logtext)
+    logfilename_simple = "logs/simple/" + today + "-simple.txt"
+    logfilename_complex = "logs/complex/" + today + "-complex.txt"
+    logtext_simple = logentrysimple(client_dictionary)
+    logtext_complex = logentrycomplex(client_dictionary)
+    log=open(logfilename_simple,"a+")
+    log.write(logtext_simple)
+    log.close()
+    log=open(logfilename_complex,"a+")
+    log.write(logtext_complex)
     log.close()
     print "*** wrote to log \n ***"
 

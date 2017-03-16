@@ -9,8 +9,15 @@ import pickle
 import os.path
 
 # This Dictionary is contiously updated. Will eventually be initalized via file.
-
-TMdatabase = {}
+if os.path.exists("python-dictionary/tm-database.txt"):
+    print "Data loaded from /python-dictionary/ folder\n***"
+else:
+    print "Data not present. Writing initial empty dictionary File.\n***"
+    intializedFile = open("python-dictionary/tm-database.txt","w+")
+    intializedFile.write("{}")
+    intializedFile.close()
+TMdatabase = eval(open("python-dictionary/tm-database.txt").read())
+print TMdatabase
 
 # Returns an actual log entry to append to log files.
 # @param the message from the network.
@@ -33,15 +40,6 @@ def logupdate(client_dictionary):
     log.write(logtext)
     log.close()
     print "*** wrote to log \n ***"
-
-    '''
-    if os.path.exists(/logs/logfilename):
-        #.e.g if this file is here
-        # Update the file
-    else:
-        # write the file
-        # update the file
-    '''
 
 # Updates TMdatabase
 # @Param is dictionary from the client.

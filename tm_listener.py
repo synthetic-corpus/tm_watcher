@@ -7,6 +7,7 @@ import socket
 import SocketServer
 import pickle
 import os.path
+import json
 
 # This Dictionary is contiously updated. Will eventually be initalized via file.
 if os.path.exists("python-dictionary/tm-database.txt"):
@@ -19,12 +20,21 @@ else:
 TMdatabase = eval(open("python-dictionary/tm-database.txt").read())
 print TMdatabase
 
+# Update the tm-database.txt file
+# @param is the TMdatabase python object.
+def writeDatabase(TMdatabase):
+    dump = json.dumps(TMdatabase)
+    getfile = open("python-dictionary/tm-database.txt","w+")
+    getfile.write(dump)
+    getfile.close()
+
 # Returns an actual log entry to append to log files.
 # @param the message from the network.
 def logentry(client_dictionary):
+    dump = json.dumps(TMdatabase)
     template = " - Computer: #name# - Serial: #serial# - status: #status# \n"
     formatted_data = template.replace("#name#",client_dictionary["name"]).replace("#serial#",client_dictionary["serial"]).replace("#status#",client_dictionary["status"])
-    output = client_dictionary["timestring"] + formatted_data
+    output = "-->" + client_dictionary["timestring"] + formatted_data + "--> Current Database is: \n" + dump + '\n\n'
     return output
 
 # Writes log entries to .txt
@@ -54,9 +64,8 @@ def updateDatabase(clientmessage):
     else:
         TMdatabase.update(clientmessage)
     logupdate(client_dictionary)
+    writeDatabase(TMdatabase)
 # Print Statments for debugging.
-    print "Databse looks like: "
-    print TMdatabase
 
 '''
 Section below listens for incoming data.

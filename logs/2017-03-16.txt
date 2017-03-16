@@ -1,0 +1,239 @@
+2017-03-16 10:52:37 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+2017-03-16 10:52:46 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+2017-03-16 11:17:03***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+g1
+sS'name'
+p6
+S"Joel's Imac Here"
+p7
+sS'timestring'
+p8
+S'2017-03-16 11:17:03'
+p9
+ss.*** 
+
+2017-03-16 11:17:08***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:17:08'
+p10
+ss.*** 
+
+2017-03-16 11:17:10***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:17:10'
+p10
+ss.*** 
+
+2017-03-16 11:17:12***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:17:12'
+p10
+ss.*** 
+
+2017-03-16 11:17:13***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:17:13'
+p10
+ss.*** 
+
+2017-03-16 11:19:04***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+g1
+sS'name'
+p6
+S"Joel's Imac Here"
+p7
+sS'timestring'
+p8
+S'2017-03-16 11:19:04'
+p9
+ss.*** 
+
+2017-03-16 11:19:32***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+g1
+sS'name'
+p6
+S"Joel's Imac Here"
+p7
+sS'timestring'
+p8
+S'2017-03-16 11:19:32'
+p9
+ss.*** 
+
+2017-03-16 11:19:35***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:19:35'
+p10
+ss.*** 
+
+2017-03-16 11:19:39***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+(dp0
+S'C02JP0B4DKQ2'
+p1
+(dp2
+S'status'
+p3
+S'working'
+p4
+sS'serial'
+p5
+S'C02JP0B4DKQ2'
+p6
+sS'name'
+p7
+S"Joel's Imac Here"
+p8
+sS'timestring'
+p9
+S'2017-03-16 11:19:39'
+p10
+ss.*** 
+
+2017-03-16 11:28:46***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:46"}}*** 
+
+2017-03-16 11:28:48***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:48"}}*** 
+
+2017-03-16 11:28:50***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:50"}}*** 
+
+2017-03-16 11:28:51***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:51"}}*** 
+
+2017-03-16 11:28:52***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:52"}}*** 
+
+2017-03-16 11:28:55***  - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+*** Current Database is: 
+{"C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-16 11:28:55"}}*** 
+

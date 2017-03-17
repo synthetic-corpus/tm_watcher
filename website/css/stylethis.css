@@ -1,1 +1,36 @@
 /* This is the Stylesheet */
+.green-dot {
+  height: 30px;
+  border-radius: 5px;
+  background-color: green;
+}
+
+.red-dot {
+  height: 30px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.yellow-dot {
+  height: 30px;
+  border-radius: 5px;
+  background-color: yellow;
+}
+
+.black-dot {
+  color: white;
+  height: 30px;
+  border-radius: 5px;
+  background-color: black;
+}
+
+table, th, td {
+   border: 1px solid black;
+   padding: 3px;
+   text-align: center;
+}
+
+th {
+  background-color: #4CAF50;
+  color: white;
+}

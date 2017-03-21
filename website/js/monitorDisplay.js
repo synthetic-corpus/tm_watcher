@@ -11,7 +11,7 @@ var statusBlack ="<div class='black-dot'>Overdue for Check in>/div>";
 
 function makeTable(statusArray){
   statusArray.forEach(function(entry){
-    status = entry.status;
+    status = checkStatus(entry.status);
     name = entry.name;
     timestring = entry.timestring;
     serial = entry.serial;
@@ -19,6 +19,18 @@ function makeTable(statusArray){
     $("#putstuffhere").append(formatted_row);
   })
 };
+
+function checkStatus(status){
+  if (status === "working"){
+    return statusGreen;
+  }
+  else if (status === "disconnected"){
+    return statusRed;
+  }
+  else if (status === "overdue") {
+    return statusYellow;
+  };
+}
 makeTable(statusArray);
 // Append statement. To be used much later.
 

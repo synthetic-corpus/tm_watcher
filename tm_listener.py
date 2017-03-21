@@ -37,8 +37,9 @@ def writeJson(TMdatabase):
     for entry in TMdatabase:
         json_object.append(TMdatabase[entry])
     dump = json.dumps(json_object)
-    json_file = open("website/js/table/jsonTable.txt","w+")
-    json_file.write(dump)
+    json_file = open("website/js/table/json-table.js","w+")
+    formatted_javascript = "var statusArray = " + dump + ";"
+    json_file.write(formatted_javascript)
     json_file.close()
 
 # Returns an actual log entry to append to log files.

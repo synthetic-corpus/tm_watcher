@@ -32,11 +32,16 @@ function checkTime(entry){
   var currentTime = new Date(Date.now());
   var timeDelta = (currentTime - inputTime)/1000/60; //Converted into minutes.
   var too_long = 12 * 60 // Twelve hours.
+  console.log(currentTime);
+  console.log(inputTime);
+  console.log(timeDelta);
   if (timeDelta >= too_long){
     return 'no check ins';
+    console.log('Is too long');
   }
   else{
     return 'recent';
+    console.log('Is recent');
   }
 }
 

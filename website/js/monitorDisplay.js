@@ -3,6 +3,7 @@ This will be the Java Script File
 */
 
 // Helper HTML strings. To be used when appending to the table.
+var HTMLtableHearder = "<tr><th>Status</th><th>Comp name</th><th>Last Check-in</th><th>Serial</th></tr>"
 var HTMLrow = "<tr><td>%status%</td><td>%nomen%</td><td>%lastcheckin%</td><td>%serial%</td></tr>";
 var statusGreen = "<div class='green-dot'>Working</div>";
 var statusRed = "<div class='red-dot'>Disconnected</div>";
@@ -32,16 +33,11 @@ function checkTime(entry){
   var currentTime = new Date(Date.now());
   var timeDelta = (currentTime - inputTime)/1000/60; //Converted into minutes.
   var too_long = 12 * 60 // Twelve hours.
-  console.log(currentTime);
-  console.log(inputTime);
-  console.log(timeDelta);
   if (timeDelta >= too_long){
     return 'no check ins';
-    console.log('Is too long');
   }
   else{
     return 'recent';
-    console.log('Is recent');
   }
 }
 
@@ -63,4 +59,15 @@ function checkStatus(entry){
     return statusYellow; // ie. Have network data. Back up is not recent.
   };
 }
-makeTable(statusArray);
+
+function reloadpage(){
+  var when = new Date(Date.now());
+  /*$("#putstuffhere").empty(); // Empty the element. Preps to redraw.
+  $("#putstuffhere").append(HTMLtableHearder);
+  makeTable(statusArray);*/
+  console.log("page reloaded at...");
+  console.log(when);
+  location.reload();
+}
+makeTable(statusArray)
+setInterval(reloadpage,5000);

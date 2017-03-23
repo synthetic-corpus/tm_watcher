@@ -4,3 +4,22 @@
 -->2017-03-23 11:44:44 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
 -->2017-03-23 11:49:44 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
 -->2017-03-23 11:54:45 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:33:36 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:38:37 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:43:37 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:48:37 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:53:38 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 12:58:38 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 13:03:39 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-23 13:05:51 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:08:39 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:10:52 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:13:40 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:15:52 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:18:46 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-23 13:20:53 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-23 13:23:48 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-23 10:00:15 - Computer: Funny guy's macbook - Serial: JOKER---DKQ2 - status: overdue 
+-->2017-03-23 10:00:18 - Computer: Batmans's macbook - Serial: BATMAN--DKQ2 - status: working 
+-->2017-03-23 10:00:21 - Computer: Feral Canadian's iMac - Serial: WOLVERINE-Q2 - status: working 
+-->2017-03-23 10:00:24 - Computer: Funny guy's macbook - Serial: JOKER---DKQ2 - status: overdue 

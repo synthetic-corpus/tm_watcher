@@ -16,15 +16,15 @@ import time
 # An Array of simulated output from this program.
 
 simulationArray = [
-{'C02JP0B4DKQ2':{'status':'working','serial':'C02JP0B4DKQ2','name':"Joel's macbook",'timestring':'2017-03-01 10:00:00'}},
-{'BATMAN--DKQ2':{'status':'disconnected','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-01 10:00:03'}},
-{'JOKER---DKQ2':{'status':'disconnected','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-01 10:00:06'}},
-{'C02JP0B4DKQ2':{'status':'working','serial':'C02JP0B4DKQ2','name':"Joel's macbook",'timestring':'2017-03-01 10:00:09'}},
-{'WOLVERINE-Q2':{'status':'overdue','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-01 10:00:12'}},
-{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-01 10:00:15'}},
-{'BATMAN--DKQ2':{'status':'working','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-01 10:00:18'}},
-{'WOLVERINE-Q2':{'status':'working','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-01 10:00:21'}},
-{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-01 10:00:24'}}
+{'C02JP0B4DKQ2':{'status':'working','serial':'C02JP0B4DKQ2','name':"Joel's macbook",'timestring':'2017-03-13 10:00:00'}},
+{'BATMAN--DKQ2':{'status':'disconnected','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-15 10:00:03'}},
+{'JOKER---DKQ2':{'status':'disconnected','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-18 10:00:06'}},
+{'C02JP0B4DKQ2':{'status':'working','serial':'C02JP0B4DKQ2','name':"Joel's macbook",'timestring':'2017-03-22 10:00:09'}},
+{'WOLVERINE-Q2':{'status':'overdue','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-22 10:00:12'}},
+{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-23 10:00:15'}},
+{'BATMAN--DKQ2':{'status':'working','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-23 10:00:18'}},
+{'WOLVERINE-Q2':{'status':'working','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-23 10:00:21'}},
+{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-23 10:00:24'}}
 ]
 
 # Function sends data overnetwork.
@@ -47,7 +47,7 @@ def simulate():
     sentCount = 0
     for message in simulationArray:
         networkOutput(message)
-        time.sleep(3)
+        time.sleep(10)
         sentCount = sentCount + 1
         print "--> sent a message...",sentCount
     print "--> All Messages sent"

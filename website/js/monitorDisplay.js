@@ -9,6 +9,9 @@ var statusRed = "<div class='red-dot'>Disconnected</div>";
 var statusYellow = "<div class='yellow-dot'>No recent back up</div>";
 var statusBlack ="<div class='black-dot'>Overdue for Check in</div>";
 
+// @param is the 'statusArray' variable Object written by TM_Listener.py
+// running this function calls all others here and modifies index.HTML
+
 function makeTable(statusArray){
   statusArray.forEach(function(entry){
     status = checkStatus(entry);
@@ -19,6 +22,10 @@ function makeTable(statusArray){
     $("#putstuffhere").append(formatted_row);
   })
 };
+
+// Checks the time of the check initself.
+// Ensure that the check in recent.
+// @param entry is a single Object{} from the Status Array
 
 function checkTime(entry){
   var inputTime = new Date(entry.timestring);
@@ -33,21 +40,22 @@ function checkTime(entry){
   }
 }
 
+// This function checks the status.
+// Returns statusBlack, statusGreen .. etc to be interpreted by makeTable()
+// @Param is a single object from statusArray
+
 function checkStatus(entry){
   if (checkTime(entry) === 'no check ins'){
-    return statusBlack;
+    return statusBlack; // i.e 'Have no network data from this computer recently'
   }
   else if (entry.status === "working"){
-    return statusGreen;
+    return statusGreen; // i.e. Have network data. Back up is recent.
   }
   else if (entry.status === "disconnected"){
-    return statusRed;
+    return statusRed; // i.e. Have network data. Back up is disconnected.
   }
   else if (entry.status === "overdue") {
-    return statusYellow;
+    return statusYellow; // ie. Have network data. Back up is not recent.
   };
 }
 makeTable(statusArray);
-// Append statement. To be used much later.
-
-// loadlist();

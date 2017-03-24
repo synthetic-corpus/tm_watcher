@@ -1,0 +1,84 @@
+-->2017-03-24 12:29:09 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 12:29:09"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 12:34:09 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 12:34:09"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 13:53:09 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 13:53:09"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 13:58:10 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 13:58:10"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:03:10 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:03:10"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:08:10 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:08:10"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:13:11 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:13:11"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:18:11 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:18:11"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:23:11 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:23:11"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:28:11 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:28:11"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:33:12 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:33:12"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:38:12 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:38:12"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:43:12 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:43:12"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:48:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:48:13"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:53:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:53:13"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 14:58:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 14:58:13"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 15:03:14 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 15:03:14"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 15:08:14 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 15:08:14"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 15:13:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 15:13:15"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 15:18:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 15:18:15"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+
+-->2017-03-24 15:23:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+--> Current Database is: 
+{"BATMAN--DKQ2": {"status": "working", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-23 10:00:18"}, "C02JP0B4DKQ2": {"status": "overdue", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-24 15:23:15"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-23 10:00:24"}, "WOLVERINE-Q2": {"status": "working", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-23 10:00:21"}}
+

@@ -70,4 +70,4 @@ function reloadpage(){
   location.reload();
 }
 makeTable(statusArray)
-setInterval(reloadpage,5000);
+setInterval(reloadpage,600000); //Page auto reloads every ten minutes

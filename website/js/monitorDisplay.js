@@ -5,10 +5,10 @@ This will be the Java Script File
 // Helper HTML strings. To be used when appending to the table.
 var HTMLtableHearder = "<tr><th>Status</th><th>Comp name</th><th>Last Check-in</th><th>Serial</th></tr>"
 var HTMLrow = "<tr><td>%status%</td><td>%nomen%</td><td>%lastcheckin%</td><td>%serial%</td></tr>";
-var statusGreen = "<div class='green-dot'>Working</div>";
-var statusRed = "<div class='red-dot'>Disconnected</div>";
-var statusYellow = "<div class='yellow-dot'>No recent back up</div>";
-var statusBlack ="<div class='black-dot'>Overdue for Check in</div>";
+var statusGreen = "<div class='green-dot'><span>Working</span></div>";
+var statusRed = "<div class='red-dot'><span>Disconnected</span></div>";
+var statusYellow = "<div class='yellow-dot'><span>No recent back up</span></div>";
+var statusBlack ="<div class='black-dot'><span>Overdue for Check in</span></div>";
 
 // @param is the 'statusArray' variable Object written by TM_Listener.py
 // running this function calls all others here and modifies index.HTML

@@ -3,31 +3,46 @@
   height: 30px;
   border-radius: 5px;
   background-color: green;
+  width: 160px;
+  vertical-align: inherit;
+  display: inherit;
 }
 
 .red-dot {
   height: 30px;
   border-radius: 5px;
   background-color: red;
+  width: 160px;
+  vertical-align: inherit;
+  display: inherit;
 }
 
 .yellow-dot {
   height: 30px;
   border-radius: 5px;
   background-color: yellow;
+  width: 160px;
+  vertical-align: inherit;
+  display: inherit;
 }
 
 .black-dot {
+  display: table-cell;
   color: white;
   height: 30px;
   border-radius: 5px;
   background-color: black;
+  width: 160px;
+  text-align: inherit;
+  vertical-align: inherit;
 }
 
 table, th, td {
+   display: table-cell;
    border: 1px solid black;
    padding: 3px;
    text-align: center;
+   vertical-align: middle;
 }
 
 th {

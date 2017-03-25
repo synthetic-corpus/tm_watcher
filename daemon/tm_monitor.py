@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # this will be where I make the TM monitor.
 
 

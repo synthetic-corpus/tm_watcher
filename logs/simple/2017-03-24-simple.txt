@@ -19,3 +19,6 @@
 -->2017-03-24 15:13:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
 -->2017-03-24 15:18:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
 -->2017-03-24 15:23:15 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 
+-->2017-03-24 17:26:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-24 17:31:14 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: disconnected 
+-->2017-03-24 17:33:44 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: overdue 

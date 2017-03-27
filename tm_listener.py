@@ -1,6 +1,11 @@
 '''
 This program will listen to the input from  clients,
-log entries, store data in files, and formatt for use by jQuery.
+log entries, store data in files, and format for use by jQuery.
+
+Program also updates .txt log files as its recieves data.
+
+Path for files must be 'logs/simple' and 'logs/complex' relative to where This
+script is located.
 '''
 
 import socket
@@ -18,6 +23,7 @@ else:
     intializedFile.write("{}")
     intializedFile.close()
 TMdatabase = eval(open("python-dictionary/tm-database.txt").read())
+print "Database current is: "
 print TMdatabase
 
 # Update the tm-database.txt file

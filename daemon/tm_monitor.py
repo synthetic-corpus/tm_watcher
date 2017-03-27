@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # this will be where I make the TM monitor.
+# Program is designed to run at start up, in background, no interaction or alerts from user.
 
 
 # Import Relevant modules to access Mac OS.
@@ -11,7 +12,7 @@ import socket
 import pickle
 import time
 
-#Used to get the computer's Serial number
+# Used to get the computer's Serial number
 def getSerial():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["system_profiler","SPHardwareDataType"], stdout=PIPE, stderr=PIPE)
@@ -23,7 +24,7 @@ def getSerial():
     string_out = result[start_cut + 24:start_cut +24 +12]
     return string_out
 
-#Gets the Computer names
+# Gets the Computer names
 def getCompName():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["scutil","--get","ComputerName"], stdout=PIPE, stderr=PIPE)
@@ -33,9 +34,9 @@ def getCompName():
     string_out = result[:-1] # Done to remove a non-character line break.
     return string_out
 
-#String to Time Stamp
-#Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
-#Converts it into a datetime object.
+# String to Time Stamp
+# Takes terminal output like '/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532'
+# Converts it into a python datetime object.
 def terminalToDatetime(string):
     # two lines below converts:
     # string = "/Volumes/140027/Backups.backupdb/Joel's Imac/2017-03-10-124532"
@@ -49,11 +50,11 @@ def terminalToDatetime(string):
     minutes = timeList[3][2:4]
     timeList[3] = hours
     timeList.append(minutes)
-    #Loop Below converts list of strings to list of integers
+    # Loop Below converts list of strings to list of integers
     timeInt =[]
     for string in timeList:
         timeInt.append(int(string))
-    #Takes input from list and converts to a date.
+    # Takes input from list and converts to a date.
     convertedDate = datetime.datetime(timeInt[0],timeInt[1],timeInt[2],timeInt[3],timeInt[4])
     return convertedDate
 
@@ -62,6 +63,8 @@ def readBackUpOutput(string):
     #Checks for the errro message using string.find
     if string.find("Unable to locate machin") != -1:
         return "disconnected"
+    elif string == "error in the read string":
+        return 'problem'
     else:
         #Compares time. Ensures not longer than 90 minutes.
         last_good_backup = terminalToDatetime(string)
@@ -73,13 +76,16 @@ def readBackUpOutput(string):
         else:
             return "overdue"
 
-#Runs a 'tmutil latestbackup' as a termainl command.
-#Returns result as a string.
+# Runs a 'tmutil latestbackup' as a termainal command.
+# Returns result as a string.
+# the Command 'tmutil latestbackup' returns either the file path to latest backup...
+# Or "unable to locate machine..." if back up is disconnected.
 def getBackupString():
-    #Returns an immutable tuple. Second thing in tuple is what I need as a string.
+    # Line below immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["tmutil","latestbackup"], stdout=PIPE, stderr=PIPE)
-    #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
+    # String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
     result = rawout.communicate()
+    # If then statements are needed, but kept just in case anything goes wrong.
     if len(result[0]) > 0:
         string_out = result[0]
     elif len(result[1]) > 0:
@@ -97,11 +103,13 @@ def sendThis(json_out):
         response_data = sock.recv(1024)
         sock.close()
     except:
-        print 'Network Error'
+        # print 'Network Error'
+        # Do nothing. Program is meant to run background,
+        # no input or alerts to user needed.
 
 # Triggers all other functions
 # Returns output as print for now.
-# Will eventually send data over network.
+# Sends data to the script on the server.
 def networkOutput():
     terminal_output = getBackupString()
     machine_status = readBackUpOutput(terminal_output)

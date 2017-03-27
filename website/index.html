@@ -1,4 +1,12 @@
-<!-- This will be the HMTL doc -->
+<!-- This will be the HMTL doc
+Program runs two Java Scirpt files after running Jquery.
+
+The first loads a Javascript variable, as written by tm_listener.py
+The second reads aforemention Javascript variable, builds a display table on the page,
+and refreshe index.html every ten minutes.
+
+Page is refeshed to account for new data written by tm_listener.py
+-->
 <html>
 <head>
   <meta charset="utf-8">
@@ -29,18 +37,6 @@
       </tr>
     </table>
   </div>
-  <!--- <div class="black-dot">No recent check in</div>
-  <div class="red-dot">Disconnected</div>
-  <div class="green-dot">Working</div>
-  <div class="yellow-dot">No recent back up</div>--->
-<!--  <tr>
-    <td>
-      <div class="black-dot">No recent check in</div>
-    </td>
-    <td>
-      Null
-    </td>
-  </tr> -->
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/jQuery.js"></script>
   <script src="js/table/json-table.js"></script>

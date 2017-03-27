@@ -1,6 +1,10 @@
 /* This is the Stylesheet */
+body {
+  font-family: "verdana", sans-serif;
+}
 .green-dot {
   height: 30px;
+  color: white;
   border-radius: 5px;
   background-color: green;
   width: 160px;
@@ -10,6 +14,7 @@
 
 .red-dot {
   height: 30px;
+  color: white;
   border-radius: 5px;
   background-color: red;
   width: 160px;

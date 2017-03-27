@@ -63,7 +63,7 @@ def readBackUpOutput(string):
     #Checks for the errro message using string.find
     if string.find("Unable to locate machin") != -1:
         return "disconnected"
-    elif string == "error in the read string":
+    elif string.find("error in the re") != -1:
         return 'problem'
     else:
         #Compares time. Ensures not longer than 90 minutes.
@@ -103,7 +103,7 @@ def sendThis(json_out):
         response_data = sock.recv(1024)
         sock.close()
     except:
-        # print 'Network Error'
+        None
         # Do nothing. Program is meant to run background,
         # no input or alerts to user needed.
 

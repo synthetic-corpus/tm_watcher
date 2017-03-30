@@ -24,11 +24,10 @@ def getSerial():
     string_out = result[start_cut + 24:start_cut +24 +12]
     return string_out
 
-# Gets the Computer names
+# Gets the Computer name
 def getCompName():
     #Returns an immutable tuple. Second thing in tuple is what I need as a string.
     rawout = subprocess.Popen(["scutil","--get","ComputerName"], stdout=PIPE, stderr=PIPE)
-    #String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
     result = rawout.communicate()[0]
     # Easiest one so far
     string_out = result[:-1] # Done to remove a non-character line break.
@@ -58,15 +57,15 @@ def terminalToDatetime(string):
     convertedDate = datetime.datetime(timeInt[0],timeInt[1],timeInt[2],timeInt[3],timeInt[4])
     return convertedDate
 
-#Reads the string output from getBackupString()
+# Reads the string output from getBackupString()
 def readBackUpOutput(string):
-    #Checks for the errro message using string.find
+    #Checks for the errror message using string.find
     if string.find("Unable to locate machin") != -1:
         return "disconnected"
     elif string.find("error in the re") != -1:
         return 'problem'
     else:
-        #Compares time. Ensures not longer than 90 minutes.
+        # Compares time. Ensures not longer than 90 minutes.
         last_good_backup = terminalToDatetime(string)
         current_time = datetime.datetime.now()
         gap = current_time - last_good_backup
@@ -85,7 +84,7 @@ def getBackupString():
     rawout = subprocess.Popen(["tmutil","latestbackup"], stdout=PIPE, stderr=PIPE)
     # String_out is what you would get if you enter 'tmutil latestbackup' in terminal. Is a string.
     result = rawout.communicate()
-    # If then statements are needed, but kept just in case anything goes wrong.
+    # If then statements may not be needed, but kept just in case anything goes wrong.
     if len(result[0]) > 0:
         string_out = result[0]
     elif len(result[1]) > 0:

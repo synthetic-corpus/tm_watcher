@@ -71,7 +71,6 @@ def logentrycomplex(client_dictionary):
 # Writes log entries to .txt
 # @Param is dictionary from the client.
 def logupdate(client_dictionary):
-    key = clientmessage.keys()[0]
     # Gets a date string in the form of YYYY-MM-DD
     # Used to name the .txt files in the log
     today = client_dictionary["timestring"][0:10]
@@ -103,7 +102,6 @@ def updateDatabase(clientmessage):
     writeDatabase(TMdatabase)
     # Updates Json database object
     writeJson(TMdatabase)
-# Print Statments for debugging.
 
 '''
 Section below listens for incoming data.

@@ -1,0 +1,15 @@
+-->2017-03-31 16:12:25 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:12:26 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:12:27 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 10:00:21 - Computer: Feral Canadian's iMac - Serial: WOLVERINE-Q2 - status: disconnected 
+-->2017-03-31 10:00:24 - Computer: Funny guy's macbook - Serial: JOKER---DKQ2 - status: overdue 
+-->2017-03-31 11:00:32 - Computer: He-man's macbook - Serial: HE-MAN--DKQ2 - status: working 
+-->2017-03-31 16:15:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:17:26 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:17:27 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:17:27 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:20:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:22:26 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:22:27 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:22:27 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 
+-->2017-03-31 16:25:13 - Computer: Joel's Imac Here - Serial: C02JP0B4DKQ2 - status: working 

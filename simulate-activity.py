@@ -22,9 +22,9 @@ simulationArray = [
 {'WOLVERINE-Q2':{'status':'overdue','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-22 10:00:12'}},
 {'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-28 10:00:15'}},
 {'BATMAN--DKQ2':{'status':'working','serial':'BATMAN--DKQ2','name':"Batmans's macbook",'timestring':'2017-03-29 10:00:18'}},
-{'WOLVERINE-Q2':{'status':'disconnected','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-29 10:00:21'}},
-{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-29 10:00:24'}},
-{'HE-MAN--DKQ2':{'status':'working','serial':'HE-MAN--DKQ2','name':"He-man's macbook",'timestring':'2017-03-29 11:00:32'}}
+{'WOLVERINE-Q2':{'status':'disconnected','serial':'WOLVERINE-Q2','name':"Feral Canadian's iMac",'timestring':'2017-03-31 10:00:21'}},
+{'JOKER---DKQ2':{'status':'overdue','serial':'JOKER---DKQ2','name':"Funny guy's macbook",'timestring':'2017-03-31 10:00:24'}},
+{'HE-MAN--DKQ2':{'status':'working','serial':'HE-MAN--DKQ2','name':"He-man's macbook",'timestring':'2017-03-31 11:00:32'}}
 ]
 
 # Function sends data overnetwork.

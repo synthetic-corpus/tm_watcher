@@ -410,3 +410,7 @@
 --> Current Database is: 
 {"WOLVERINE-Q2": {"status": "overdue", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-22 10:00:12"}, "BATMAN--DKQ2": {"status": "disconnected", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-15 10:00:03"}, "C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-29 15:12:41"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-28 10:00:15"}, "IRONMAN-DKQ2": {"status": "working", "serial": "IRONMAN-DKQ2", "name": "Iron Man's iMac", "timestring": "2017-03-22 10:00:09"}}
 
+-->2017-03-28 10:00:15 - Computer: Funny guy's macbook - Serial: JOKER---DKQ2 - status: overdue 
+--> Current Database is: 
+{"WOLVERINE-Q2": {"status": "overdue", "serial": "WOLVERINE-Q2", "name": "Feral Canadian's iMac", "timestring": "2017-03-22 10:00:12"}, "BATMAN--DKQ2": {"status": "disconnected", "serial": "BATMAN--DKQ2", "name": "Batmans's macbook", "timestring": "2017-03-15 10:00:03"}, "C02JP0B4DKQ2": {"status": "working", "serial": "C02JP0B4DKQ2", "name": "Joel's Imac Here", "timestring": "2017-03-31 16:12:27"}, "JOKER---DKQ2": {"status": "overdue", "serial": "JOKER---DKQ2", "name": "Funny guy's macbook", "timestring": "2017-03-28 10:00:15"}, "IRONMAN-DKQ2": {"status": "working", "serial": "IRONMAN-DKQ2", "name": "Iron Man's iMac", "timestring": "2017-03-22 10:00:09"}}
+

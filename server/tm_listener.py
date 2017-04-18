@@ -114,7 +114,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # Honestly unsure why the books tells me I need this line.
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
-known_port = 8881
+known_port = 443
 sock.bind(('', known_port))
 
 # Max number of clients waiting for connecting is 5

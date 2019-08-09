@@ -1,8 +1,7 @@
 # tm_watcher
-A repo in which I write something useful in Python.
+This repo was a first draft of something I worked on personally to monitor Mac Back ups remotely. I eventually cloned this project into a company's repo and continued from there.
 
-Purpose of this project is deploy a client to each station, which will record TM Status
+The final version of this project contained an Node.js SQL backend instead of the "server" file written here. The client side was also eventually expanded to include a GUI and additional monitoring functionatlity.
 
-Data is sent over to a server, which analyzes the data and then display it via HTML.
-
-Server and client all written with python.
+# Disclaimer
+This Repo was made public for demonstration of my python coding ability only, and is not intended to be deployed in any production environment. I assume no liability for this project.
